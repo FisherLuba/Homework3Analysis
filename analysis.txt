@@ -1,0 +1,118 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 37.75      1.51     1.51    50036     0.03     0.03  Matrix::Matrix(unsigned int, unsigned int, double)
+ 26.12      2.56     1.04 500000167     0.00     0.00  Matrix::set(unsigned int, unsigned int, double)
+ 18.00      3.27     0.72     1000     0.72     3.99  BatchTest(double, double, unsigned int, unsigned int, unsigned int)
+ 17.12      3.96     0.69 500000649     0.00     0.00  Matrix::in_bounds(unsigned int, unsigned int) const
+  0.75      3.99     0.03   150093     0.00     0.00  Matrix::clear()
+  0.25      4.00     0.01                             _init
+  0.00      4.00     0.00   300102     0.00     0.00  std::remove_reference<unsigned int&>::type&& std::move<unsigned int&>(unsigned int&)
+  0.00      4.00     0.00   150051     0.00     0.00  std::remove_reference<double**&>::type&& std::move<double**&>(double**&)
+  0.00      4.00     0.00   100063     0.00     0.00  Matrix::~Matrix()
+  0.00      4.00     0.00   100034     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<unsigned int> >, std::is_move_constructible<unsigned int>, std::is_move_assignable<unsigned int> >::value, void>::type std::swap<unsigned int>(unsigned int&, unsigned int&)
+  0.00      4.00     0.00    50019     0.00     0.00  Matrix::Matrix()
+  0.00      4.00     0.00    50017     0.00     0.00  swap(Matrix&, Matrix&)
+  0.00      4.00     0.00    50017     0.00     0.00  Matrix::operator=(Matrix)
+  0.00      4.00     0.00    50017     0.00     0.00  std::enable_if<std::__and_<std::__not_<std::__is_tuple_like<double**> >, std::is_move_constructible<double**>, std::is_move_assignable<double**> >::value, void>::type std::swap<double**>(double**&, double**&)
+  0.00      4.00     0.00      480     0.00     0.00  Matrix::get(unsigned int, unsigned int, double&) const
+  0.00      4.00     0.00      160     0.00     0.00  double&& std::forward<double>(std::remove_reference<double>::type&)
+  0.00      4.00     0.00      109     0.00     0.00  Matrix::num_cols() const
+  0.00      4.00     0.00       59     0.00     0.00  Matrix::num_rows() const
+  0.00      4.00     0.00       32     0.00     0.00  Matrix::same_dimensions(Matrix const&) const
+  0.00      4.00     0.00       32     0.00     0.00  Matrix::add(Matrix const&)::{lambda(double, double)#1}& std::forward<Matrix::add(Matrix const&)::{lambda(double, double)#1}&>(std::remove_reference<Matrix::add(Matrix const&)::{lambda(double, double)#1}&>::type&)
+  0.00      4.00     0.00       29     0.00     0.00  Matrix::operator==(Matrix const&) const
+  0.00      4.00     0.00       29     0.00     0.00  operator<<(std::ostream&, Matrix const&)
+  0.00      4.00     0.00       24     0.00     0.00  std::_Function_base::_M_empty() const
+  0.00      4.00     0.00       24     0.00     0.00  std::_Any_data::_M_access() const
+  0.00      4.00     0.00       22     0.00     0.00  double_compare(double, double)
+  0.00      4.00     0.00       18     0.00     0.00  std::_Any_data::_M_access()
+  0.00      4.00     0.00       16     0.00     0.00  std::function<double (double, double)>::operator()(double, double) const
+  0.00      4.00     0.00       16     0.00     0.00  Matrix::add(Matrix const&)::{lambda(double, double)#1} const& std::_Any_data::_M_access<Matrix::add(Matrix const&)::{lambda(double, double)#1}>() const
+  0.00      4.00     0.00       16     0.00     0.00  std::_Function_base::_Base_manager<Matrix::add(Matrix const&)::{lambda(double, double)#1}>::_M_get_pointer(std::_Any_data const&)
+  0.00      4.00     0.00       16     0.00     0.00  std::_Function_handler<double (double, double), Matrix::add(Matrix const&)::{lambda(double, double)#1}>::_M_invoke(std::_Any_data const&, double&&, double&&)
+  0.00      4.00     0.00       16     0.00     0.00  std::enable_if<is_invocable_r_v<double, Matrix::add(Matrix const&)::{lambda(double, double)#1}&, double, double>, double>::type std::__invoke_r<double, Matrix::add(Matrix const&)::{lambda(double, double)#1}&, double, double>(Matrix::add(Matrix const&)::{lambda(double, double)#1}&, double&&, double&&)
+  0.00      4.00     0.00       16     0.00     0.00  Matrix::add(Matrix const&)::{lambda(double, double)#1} const* std::__addressof<Matrix::add(Matrix const&)::{lambda(double, double)#1} const>(Matrix::add(Matrix const&)::{lambda(double, double)#1} const&)
+  0.00      4.00     0.00       16     0.00     0.00  double std::__invoke_impl<double, Matrix::add(Matrix const&)::{lambda(double, double)#1}&, double, double>(std::__invoke_other, Matrix::add(Matrix const&)::{lambda(double, double)#1}&, double&&, double&&)
+  0.00      4.00     0.00       16     0.00     0.00  Matrix::add(Matrix const&)::{lambda(double, double)#1}::operator()(double, double) const
+  0.00      4.00     0.00        9     0.00     0.00  std::_Function_base::_Function_base()
+  0.00      4.00     0.00        9     0.00     0.00  std::_Function_base::~_Function_base()
+  0.00      4.00     0.00        9     0.00     0.00  Matrix::multiply_by_coefficient(double)::{lambda(double)#1}&& std::forward<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>(std::remove_reference<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>::type&)
+  0.00      4.00     0.00        9     0.00     0.00  Matrix::add(double)::{lambda(double)#1}&& std::forward<Matrix::add(double)::{lambda(double)#1}>(std::remove_reference<Matrix::add(double)::{lambda(double)#1}>::type&)
+  0.00      4.00     0.00        9     0.00     0.00  operator new(unsigned long, void*)
+  0.00      4.00     0.00        8     0.00     0.00  std::function<double (double)>::operator()(double) const
+  0.00      4.00     0.00        8     0.00     0.00  std::ceil(float)
+  0.00      4.00     0.00        8     0.00     0.00  Matrix::multiply_by_coefficient(double)::{lambda(double)#1}& std::forward<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}&>(std::remove_reference<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}&>::type&)
+  0.00      4.00     0.00        8     0.00     0.00  Matrix::add(double)::{lambda(double)#1}& std::forward<Matrix::add(double)::{lambda(double)#1}&>(std::remove_reference<Matrix::add(double)::{lambda(double)#1}&>::type&)
+  0.00      4.00     0.00        6     0.00     0.00  Matrix::operate(std::function<double (double)> const&)
+  0.00      4.00     0.00        6     0.00     0.00  std::function<double (double)>::~function()
+  0.00      4.00     0.00        6     0.00     0.00  Matrix::add(Matrix const&)::{lambda(double, double)#1}&& std::forward<Matrix::add(Matrix const&)::{lambda(double, double)#1}>(std::remove_reference<Matrix::add(Matrix const&)::{lambda(double, double)#1}>::type&)
+  0.00      4.00     0.00        4     0.00     0.00  Matrix::transpose()
+  0.00      4.00     0.00        4     0.00     0.00  Matrix::Matrix(double**, unsigned int, unsigned int)
+  0.00      4.00     0.00        4     0.00     0.00  Matrix::Matrix(Matrix const&)
+  0.00      4.00     0.00        4     0.00     0.12  Matrix::quarter() const
+  0.00      4.00     0.00        4     0.00     0.00  Matrix::operator!=(Matrix const&) const
+  0.00      4.00     0.00        4     0.00     0.00  Matrix::multiply_by_coefficient(double)::{lambda(double)#1} const& std::_Any_data::_M_access<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>() const
+  0.00      4.00     0.00        4     0.00     0.00  Matrix::add(double)::{lambda(double)#1} const& std::_Any_data::_M_access<Matrix::add(double)::{lambda(double)#1}>() const
+  0.00      4.00     0.00        4     0.00     0.00  std::_Function_base::_Base_manager<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>::_M_get_pointer(std::_Any_data const&)
+  0.00      4.00     0.00        4     0.00     0.00  std::_Function_base::_Base_manager<Matrix::add(double)::{lambda(double)#1}>::_M_get_pointer(std::_Any_data const&)
+  0.00      4.00     0.00        4     0.00     0.00  std::_Function_handler<double (double), Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>::_M_invoke(std::_Any_data const&, double&&)
+  0.00      4.00     0.00        4     0.00     0.00  std::_Function_handler<double (double), Matrix::add(double)::{lambda(double)#1}>::_M_invoke(std::_Any_data const&, double&&)
+  0.00      4.00     0.00        4     0.00     0.00  std::enable_if<is_invocable_r_v<double, Matrix::multiply_by_coefficient(double)::{lambda(double)#1}&, double>, double>::type std::__invoke_r<double, Matrix::multiply_by_coefficient(double)::{lambda(double)#1}&, double>(Matrix::multiply_by_coefficient(double)::{lambda(double)#1}&, double&&)
+  0.00      4.00     0.00        4     0.00     0.00  std::enable_if<is_invocable_r_v<double, Matrix::add(double)::{lambda(double)#1}&, double>, double>::type std::__invoke_r<double, Matrix::add(double)::{lambda(double)#1}&, double>(Matrix::add(double)::{lambda(double)#1}&, double&&)
+  0.00      4.00     0.00        4     0.00     0.00  Matrix::multiply_by_coefficient(double)::{lambda(double)#1} const* std::__addressof<Matrix::multiply_by_coefficient(double)::{lambda(double)#1} const>(Matrix::multiply_by_coefficient(double)::{lambda(double)#1} const&)
+  0.00      4.00     0.00        4     0.00     0.00  Matrix::add(double)::{lambda(double)#1} const* std::__addressof<Matrix::add(double)::{lambda(double)#1} const>(Matrix::add(double)::{lambda(double)#1} const&)
+  0.00      4.00     0.00        4     0.00     0.00  double std::__invoke_impl<double, Matrix::multiply_by_coefficient(double)::{lambda(double)#1}&, double>(std::__invoke_other, Matrix::multiply_by_coefficient(double)::{lambda(double)#1}&, double&&)
+  0.00      4.00     0.00        4     0.00     0.00  double std::__invoke_impl<double, Matrix::add(double)::{lambda(double)#1}&, double>(std::__invoke_other, Matrix::add(double)::{lambda(double)#1}&, double&&)
+  0.00      4.00     0.00        4     0.00     0.00  Matrix::multiply_by_coefficient(double)::{lambda(double)#1}::operator()(double) const
+  0.00      4.00     0.00        4     0.00     0.00  Matrix::add(double)::{lambda(double)#1}::operator()(double) const
+  0.00      4.00     0.00        3     0.00     0.00  Matrix::multiply_by_coefficient(double)
+  0.00      4.00     0.00        3     0.00     0.00  Matrix::add(double)
+  0.00      4.00     0.00        3     0.00     0.00  Matrix::operate(Matrix const&, std::function<double (double, double)> const&)
+  0.00      4.00     0.00        3     0.00     0.00  std::_Function_base::_Base_manager<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, true>)
+  0.00      4.00     0.00        3     0.00     0.00  std::_Function_base::_Base_manager<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00      4.00     0.00        3     0.00     0.00  void std::_Function_base::_Base_manager<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>::_M_init_functor<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>(std::_Any_data&, Matrix::multiply_by_coefficient(double)::{lambda(double)#1}&&)
+  0.00      4.00     0.00        3     0.00     0.00  bool std::_Function_base::_Base_manager<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>::_M_not_empty_function<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>(Matrix::multiply_by_coefficient(double)::{lambda(double)#1} const&)
+  0.00      4.00     0.00        3     0.00     0.00  void std::_Function_base::_Base_manager<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>::_M_create<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>(std::_Any_data&, Matrix::multiply_by_coefficient(double)::{lambda(double)#1}&&, std::integral_constant<bool, true>)
+  0.00      4.00     0.00        3     0.00     0.00  std::_Function_base::_Base_manager<Matrix::add(double)::{lambda(double)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, true>)
+  0.00      4.00     0.00        3     0.00     0.00  std::_Function_base::_Base_manager<Matrix::add(double)::{lambda(double)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00      4.00     0.00        3     0.00     0.00  void std::_Function_base::_Base_manager<Matrix::add(double)::{lambda(double)#1}>::_M_init_functor<Matrix::add(double)::{lambda(double)#1}>(std::_Any_data&, Matrix::add(double)::{lambda(double)#1}&&)
+  0.00      4.00     0.00        3     0.00     0.00  bool std::_Function_base::_Base_manager<Matrix::add(double)::{lambda(double)#1}>::_M_not_empty_function<Matrix::add(double)::{lambda(double)#1}>(Matrix::add(double)::{lambda(double)#1} const&)
+  0.00      4.00     0.00        3     0.00     0.00  void std::_Function_base::_Base_manager<Matrix::add(double)::{lambda(double)#1}>::_M_create<Matrix::add(double)::{lambda(double)#1}>(std::_Any_data&, Matrix::add(double)::{lambda(double)#1}&&, std::integral_constant<bool, true>)
+  0.00      4.00     0.00        3     0.00     0.00  std::_Function_handler<double (double), Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00      4.00     0.00        3     0.00     0.00  std::_Function_handler<double (double), Matrix::add(double)::{lambda(double)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00      4.00     0.00        3     0.00     0.00  std::function<double (double)>::function<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}, void>(Matrix::multiply_by_coefficient(double)::{lambda(double)#1}&&)
+  0.00      4.00     0.00        3     0.00     0.00  std::function<double (double)>::function<Matrix::add(double)::{lambda(double)#1}, void>(Matrix::add(double)::{lambda(double)#1}&&)
+  0.00      4.00     0.00        3     0.00     0.00  std::function<double (double, double)>::~function()
+  0.00      4.00     0.00        3     0.00     0.00  Matrix::multiply_by_coefficient(double)::{lambda(double)#1}& std::_Any_data::_M_access<Matrix::multiply_by_coefficient(double)::{lambda(double)#1}>()
+  0.00      4.00     0.00        3     0.00     0.00  Matrix::add(double)::{lambda(double)#1}& std::_Any_data::_M_access<Matrix::add(double)::{lambda(double)#1}>()
+  0.00      4.00     0.00        3     0.00     0.00  Matrix::subtract(Matrix const&)::{lambda(double, double)#1}&& std::forward<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>(std::remove_reference<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>::type&)
+  0.00      4.00     0.00        2     0.00     0.00  Matrix::add(Matrix const&)
+  0.00      4.00     0.00        2     0.00     0.00  Matrix::divide(double)
+  0.00      4.00     0.00        2     0.00     0.00  std::_Function_base::_Base_manager<Matrix::add(Matrix const&)::{lambda(double, double)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, true>)
+  0.00      4.00     0.00        2     0.00     0.00  std::_Function_base::_Base_manager<Matrix::add(Matrix const&)::{lambda(double, double)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00      4.00     0.00        2     0.00     0.00  void std::_Function_base::_Base_manager<Matrix::add(Matrix const&)::{lambda(double, double)#1}>::_M_init_functor<Matrix::add(Matrix const&)::{lambda(double, double)#1}>(std::_Any_data&, Matrix::add(Matrix const&)::{lambda(double, double)#1}&&)
+  0.00      4.00     0.00        2     0.00     0.00  bool std::_Function_base::_Base_manager<Matrix::add(Matrix const&)::{lambda(double, double)#1}>::_M_not_empty_function<Matrix::add(Matrix const&)::{lambda(double, double)#1}>(Matrix::add(Matrix const&)::{lambda(double, double)#1} const&)
+  0.00      4.00     0.00        2     0.00     0.00  void std::_Function_base::_Base_manager<Matrix::add(Matrix const&)::{lambda(double, double)#1}>::_M_create<Matrix::add(Matrix const&)::{lambda(double, double)#1}>(std::_Any_data&, Matrix::add(Matrix const&)::{lambda(double, double)#1}&&, std::integral_constant<bool, true>)
+  0.00      4.00     0.00        2     0.00     0.00  std::_Function_handler<double (double, double), Matrix::add(Matrix const&)::{lambda(double, double)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00      4.00     0.00        2     0.00     0.00  std::function<double (double, double)>::function<Matrix::add(Matrix const&)::{lambda(double, double)#1}, void>(Matrix::add(Matrix const&)::{lambda(double, double)#1}&&)
+  0.00      4.00     0.00        2     0.00     0.00  Matrix::add(Matrix const&)::{lambda(double, double)#1}& std::_Any_data::_M_access<Matrix::add(Matrix const&)::{lambda(double, double)#1}>()
+  0.00      4.00     0.00        1     0.00     0.28  SimpleTest()
+  0.00      4.00     0.00        1     0.00     0.83  StudentTest()
+  0.00      4.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      4.00     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      4.00     0.00        1     0.00     0.00  rref(Matrix const&)
+  0.00      4.00     0.00        1     0.00     0.00  Matrix::get_col(unsigned int)
+  0.00      4.00     0.00        1     0.00     0.00  Matrix::get_row(unsigned int)
+  0.00      4.00     0.00        1     0.00     0.00  Matrix::subtract(Matrix const&)
+  0.00      4.00     0.00        1     0.00     0.00  Matrix::subtract(double)
+  0.00      4.00     0.00        1     0.00     0.00  std::_Function_base::_Base_manager<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>::_M_destroy(std::_Any_data&, std::integral_constant<bool, true>)
+  0.00      4.00     0.00        1     0.00     0.00  std::_Function_base::_Base_manager<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00      4.00     0.00        1     0.00     0.00  void std::_Function_base::_Base_manager<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>::_M_init_functor<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>(std::_Any_data&, Matrix::subtract(Matrix const&)::{lambda(double, double)#1}&&)
+  0.00      4.00     0.00        1     0.00     0.00  bool std::_Function_base::_Base_manager<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>::_M_not_empty_function<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>(Matrix::subtract(Matrix const&)::{lambda(double, double)#1} const&)
+  0.00      4.00     0.00        1     0.00     0.00  void std::_Function_base::_Base_manager<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>::_M_create<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>(std::_Any_data&, Matrix::subtract(Matrix const&)::{lambda(double, double)#1}&&, std::integral_constant<bool, true>)
+  0.00      4.00     0.00        1     0.00     0.00  std::_Function_handler<double (double, double), Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+  0.00      4.00     0.00        1     0.00     0.00  std::function<double (double, double)>::function<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}, void>(Matrix::subtract(Matrix const&)::{lambda(double, double)#1}&&)
+  0.00      4.00     0.00        1     0.00     0.00  Matrix::subtract(Matrix const&)::{lambda(double, double)#1}& std::_Any_data::_M_access<Matrix::subtract(Matrix const&)::{lambda(double, double)#1}>()
